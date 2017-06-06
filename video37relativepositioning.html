@@ -1,0 +1,25 @@
+<!-- Video 37 Relative Positioning
+-->
+
+<!doctype html>
+<head>
+	<style type="text/css">
+		#third {
+			border: 1px solid green; /* BTW, border without dimensions the width extends from left to right entire browser window */
+			position: absolute; /* position: absolute; top: 60px; left: 30px; starts from position top left of browser window */
+			position: relative; /* position: relative; top: 60px; left: 30px; starts from position where #third is placed in html code of browser window */
+			top: 60px;
+			left: 30px;			
+	}
+	</style>
+	<meta charset="UTF-8">
+	<title>Video 37</title>
+</head>
+<body>
+<p>first</p>
+<p>second</p>
+<!-- BTW, border without dimensions the width extends from left to right entire browser window -->
+<p id="third">third</p>
+<p>fourth</p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- Video 16 Intro to CSS <style type="text/css"></style>
+	Video 17 RGB Color and line spacing
+	Video 18 Font Weight and Font Style
+	Video 19 Text Align and Change Background Color
+	Video 20 Background Image
+	Video 21 Padding
+	Video 22 Border
+	Video 23 Margin, last video of box model.  Margins surrounds the entire html element including padding and border.
+
+-->
+
+<!doctype html>
+<head>
+	<!-- <link type="text/css" ref="stylesheet" href=""> -->
+	<style type="text/css">
+	/* element or selector {property: value;} */
+		body {
+			background-color: yellow;
+			background-image: url(jellyfish.jpg);
+			background-repeat: no-repeat; /* default to repeat background image is background-repeat: repeat; */
+			background-repeat: repeat-x;  /* repeat horizontal.  Repeat-y tiles image vertically */
+			background-position: 50% 50px;/* alters the position.  Two parameters:  how far from left hand side and how far from the top side.  Percentages also work; e.g. 50% 60px centers from the left right 60px from the top side */
+			color: red;  /* set default color to red.  Can override with another element CSS */			
+		}
+		h1 {
+			color: #330000;
+		}
+		p {
+			color: blue;
+			font-family: arial;
+			line-height: 150%; /*default is 100%*/
+		}
+		ul {
+			font-weight: bold;
+		}
+		ol {
+			font-style: italic;
+		}
+		h3 {
+			text-align: center;
+		}
+		#indent {
+			text-indent:  25px; /* in pixels */			
+		}
+		h2 {
+			background-color: pink;
+			/* padding: 20px; /* one number applies to top, right, bottom, left.  Four numbers applies to top, right, bottom, left respectively; for example padding 30px 0px 20px 10px. */
+			padding-top: 30px;   /* We can specificy which side of padding */
+			padding-bottom: 20px;  /* We can specificy which side of padding */
+			border-color: black; /* shortcut is border: 3px dotted black */
+			border-width: 3px;
+			border-style: dotted;
+			/* we can specificy which side of a border; e.g. border-top-color: green; border-top-style: dotted; */
+			border-bottom-color: green;
+			border-bottom-width: 6px;
+		}
+		#margin {
+			background-color: orange;
+			margin: 40px; /* Can also change margin top, right, bottom, left; e.g. margin-top: 25px; */
+
+		}
+
+	</style>		
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+this is a normal text
+<p>this is a paragraph text</p>
+
+<h1>Bucky's Bacon Wagon</h1>
+<p>Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! Bets abcon on this side of the mississippi! </p>
+
+<ul>
+	<li>unordered list</li>
+</ul>
+<ol>
+	<li>ordered list</li>
+</ol>
+
+<h3>Bucky's Blog</h3>
+<p id="indent">This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  This is the best day ever.  </p>
+
+<h2>I love bucky</h2>
+
+<p id="margin">This is a paragraph</p>
+<p id="margin">This is a paragraph</p>
+</body>
+</html>

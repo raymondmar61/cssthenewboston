@@ -1,0 +1,47 @@
+<!-- Video 29 div.  Div is short for division.  Div allows to define a section to place elements at a specific section.  For example, image at top right, heading bottom left, paragraphs somewhere in the middle are examples.
+     Video 30 Styling Using Classes.  We can affect the same elements in different ways.  Classes defined in <style> tag begins with a period (.) and the class name.
+     Video 31 IDs.  Use IDs a lot with div to position div boxes at different locations.  ID defined in ,style> tag begins with a pound sign (#) and the ID name.
+
+-->
+
+<!doctype html>
+<head>
+	<style type="text/css">
+	/* element or selector {property: value;} */
+	div {
+		border: 2px solid red;
+		position: absolute;
+		width: 300px; /* create a box 300px wide */
+		top: 40px; /* top left corner is 40px down or 40px from the top */
+		left: 35px; /* 35px from the left */
+	}
+	.redtext {
+		color: red;
+	}
+	.greengoblins {
+		color: green;
+	}
+	#bobby {
+		border: 2px solid red;
+		position: absolute;
+		top: 150px;
+		left: 250px;
+	}
+	#hobart {
+		border: 2px solid green;
+		position: absolute;
+		top: 650px;
+		left: 50px;
+	}
+	</style>		
+	<meta charset="UTF-8">
+	<title>Video 29, 30, 31</title>
+</head>
+<body>
+<div>My name is bucky</div>
+<p class="redtext">I want this text to be red!</p>
+<p class="greengoblins">boy or boy i wish i was GREEN!</p>
+<div id="bobby">bobby is the best</div>
+<div id="hobart">hobart is the coolest</div>
+</body>
+</html>

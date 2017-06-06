@@ -1,0 +1,28 @@
+<!-- Video 32 child selectors.  A child is a tag inside another tag.  e.g. <body> is a child to parent <html>.  <head> is a child to parent <html>  <style> is a child to parent <head>.  We learn how to style a child tag.
+
+-->
+
+<!doctype html>
+<head>
+<!-- technically speaking <style> is the grandchild of <html> -->
+	<style type="text/css">
+	/* element or selector {property: value;} */
+	p > a { /* applied style parent <p> > anchor <a> */
+		color: red;
+		font-size: 30px;
+	}
+	h3 > a {
+		color: green;
+		font-size: 60px;
+	}
+	</style>		
+	<meta charset="UTF-8">
+	<title>Video 32</title>
+</head>
+<body>
+<a href="http://thenewboston.com">first</a>
+<p><a href="http://thenewboston.com">second</a></p>
+<h3><a href="thenewboston.com">third</a></h3>
+
+</body>
+</html>

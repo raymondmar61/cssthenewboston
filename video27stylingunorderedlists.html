@@ -1,0 +1,56 @@
+<!-- Video 27 Styling Unordered Lists
+     Video 28 Apply Styles More Than One Elements Span
+     Span tag <span></span>  apply property with a group or a block of text.  Can't use any other word.  XHTML tag.
+
+-->
+
+<!doctype html>
+<head>
+	<style type="text/css">
+	/* element or selector {property: value;} */
+	ul {
+		list-style-type: square; /* off top of instructor's head are none, square, circle, even katagana */
+		list-style-type: none; /* remove bullet points */
+		padding: 0; /* Default, browser adds padding to the left of each bullet point.  Remove padding bullet point */
+		border: 1px solid red;
+	}
+
+	/* it seems the #image id inherits the ul above.  #image element property values override the ul element property values */
+	
+	#image {
+		list-style-image: url(tomtom.jpg);
+	}
+
+	h1, p {
+		color: red;
+	} /* Apply property and value to more than one element.  Separate elements with a comma */
+
+	span {
+		font-weight: bold;
+		color: green;
+	}
+
+	</style>		
+	<meta charset="UTF-8">
+	<title>Video 27, 28</title>
+</head>
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>dumplings</li>
+</ul>
+
+<ul id=image>
+	<li>orange</li>
+	<li>cake</li>
+	<li>noodles</li>
+</ul>
+
+This is normal text no p tags.
+<h1>This is header one</h1>
+<p>This is a paragraph</p>
+<br>
+This is my first para and <span>I love carrots</span> and apple pie.
+</body>
+</html>

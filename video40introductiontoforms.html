@@ -1,0 +1,58 @@
+<!-- Video 40 Introduction To Forms
+    Video 41 Check Boxes Radio Buttons
+    Video 42 Drop Down Lists
+    Video 43 Text Area
+    Video 44 Passwords Upload Buttons
+    Video 45 Submitting Forms
+-->
+
+<!doctype html>
+<head>
+	<style type="text/css">
+
+	</style>
+	<meta charset="UTF-8">
+	<title>Video 40, 41, 42, 43, 44, 45</title>
+</head>
+<body>
+<form action="" method="">
+	Username: <input type="text" name="username" size="25" maxlength="50" value="default value"/>
+	<br/>
+	Male: <input type="radio" name="sex" value="male" /> <!-- Group radio buttons under the same name -->
+	Female: <input type="radio" name="sex" value="female" />
+	<br/>
+	<p>Select the foods that you would like to order!</p>
+	Bacon <input type="checkbox" name="food" value="bacon"> <!-- Group checkboxs under the same name -->
+	Ham <input type="checkbox" name="food" value="ham">
+	Tuna <input type="checkbox" name="food" value="tuna">
+	Soda Pop <input type="checkbox" name="food" value="soda pop">
+	<br/>
+	<p>What do you want to do today?</p>
+	<select name="activities" id="">
+		<option value="play">play the guitar</option>
+		<option value="your">comb your hair</option>
+		<option value="someonelese">comb someone else's hair</option>
+		<option value="possium">teach a possium to tango</option>
+		<option value="shave">shave</option>
+	</select>
+	<br>
+	<br>
+	Tell me about yourself
+	<br>
+	<textarea name="bio" id="" cols="30" rows="10">Default type here
+	</textarea>
+	<br>
+	Password: <input type="password" name="pword" size="20" maxlength="30" />
+	<p>Now submit a file!</p>
+	<input type="file" name="buckysfile"/> <!-- file upload.  Choose a file to upload to the webserver -->
+	<br>
+	Username2: <input type="text" name="username2" />
+	<br>
+	Password2: <input type="password" name="pword2" />
+	<br>
+	<input type="submit" value="Value appears on the button"> <!-- Submit button -->
+
+</form>
+
+</body>
+</html>
